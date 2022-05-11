@@ -1,0 +1,47 @@
+:root{
+   --primary: #E63B2E;
+   --secundary: #F85A3E;
+   --tertairy: #AADCE6;
+   --quaternary: #C5E1E0;
+
+   --background: #E1E6E1;
+
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+*{
+   padding: 0;
+   margin: 0;
+}
+
+nav{
+    background-color: var(--primary);
+    height: 10vh;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0 2%;
+}
+
+nav div{
+    display: flex;
+    flex-direction: row;
+}
+
+nav a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    font-weight: 600;
+    text-decoration: none;
+    color: aliceblue;
+
+    padding: 0 1em;
+}
+
+nav a:hover{
+    background-color: var(--secundary);
+}
