@@ -15,7 +15,7 @@
   </head>
   <body>
     <nav>
-      <div>
+      <div class="navbar">
         <a href="index.php">Home</a>
         <a>Cruises</a>
         <a>Over ons</a>

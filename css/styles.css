@@ -10,9 +10,7 @@
   --secundary: #f85a3e;
   --tertairy: #aadce6;
   --quaternary: #c5e1e0;
-
   --background: #e1e6e1;
-
   font-family: "Source Sans Pro", sans-serif;
 }
 
@@ -25,7 +23,7 @@ nav {
   padding: 0 2%;
 }
 
-nav div {
+nav .navbar {
   display: flex;
   flex-direction: row;
 }
@@ -43,7 +41,6 @@ nav a {
 }
 
 nav a:hover {
-  margin: 2px;
   color: var(--primary);
 }
 
@@ -59,14 +56,14 @@ nav a:hover {
   background-repeat: no-repeat;
 }
 
-.search_bar {
+.background_landing .search_bar {
   width: 50%;
   height: 200px;
   background-color: var(--secundary);
   margin-top: 350px;
 }
 
-.cards {
+.background_landing .cards {
   margin-top: 100px;
   width: 100%;
   height: 400px;
