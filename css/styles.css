@@ -18,7 +18,7 @@
 
 /*nav bar*/
 nav {
-  background-color: var(--tertairy);
+  position: absolute;
   height: 9vh;
   display: flex;
   justify-content: space-between;
@@ -59,7 +59,7 @@ nav a:hover {
 
 .background_landing .search_bar {
   width: 65%;
-  height: 200px;
+  height: 100px;
   background-color: var(--secundary05);
   margin-top: 350px;
 
