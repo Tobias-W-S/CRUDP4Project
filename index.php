@@ -3,6 +3,7 @@
     ?>
 <div class="background_landing">
     <div class="search_bar"></div>
+<<<<<<< HEAD
 </div>
     <div class="cards">
     <div class="card_box">
@@ -69,5 +70,9 @@
 	</div>
 </div>
     </div>
+=======
+    <div class="cards"></div>
+</div>
+>>>>>>> main
 </body>
 </html>
