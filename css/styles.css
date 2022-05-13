@@ -8,6 +8,8 @@
 :root {
   --primary: #e63b2e;
   --secundary: #f85a3e;
+  --secundary05: rgba(248, 90, 62, 0.9);
+
   --tertairy: #aadce6;
   --quaternary: #c5e1e0;
   --background: #e1e6e1;
@@ -57,10 +59,12 @@ nav a:hover {
 }
 
 .background_landing .search_bar {
-  width: 50%;
+  width: 65%;
   height: 200px;
-  background-color: var(--secundary);
+  background-color: var(--secundary05);
   margin-top: 350px;
+
+
 }
 
 .background_landing .cards {
@@ -69,3 +73,69 @@ nav a:hover {
   height: 400px;
   background-color: var(--primary);
 }
+
+/*Search bar css*/
+.indexFilter{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    height: 100%;
+
+}
+
+.indexFilter input{
+    border-style: solid;
+    border-width: 1px;
+
+    border-color: rgb(165, 185, 207);
+
+    transition-duration: 0.2s;
+
+    outline: none;
+
+    height: 2em;
+
+    margin-top: 1em;
+}
+
+.indexFilter input[type=text]{
+    font-weight: 600;
+    color: var(--quaternary);
+
+    padding-left: 0.25em;
+}
+
+.indexFilter input:focus{
+    border-style: solid;
+    border-width: 2px;
+
+    border-color: rgb(129, 163, 199);
+}
+
+.indexFilter > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.indexFilter label{
+    margin-top: 0.25em;
+
+    font-weight: 600;
+    font-size: 21px;
+    text-align: center;
+}
+
+.indexFilter input[type=submit]{
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    background-color: var(--quaternary);
+
+    border-style: solid;
+    border-radius: 1em;
+
+    width: 12%;
+}
+/*End Search bar css*/
