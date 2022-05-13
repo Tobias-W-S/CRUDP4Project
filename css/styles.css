@@ -68,8 +68,7 @@ nav a:hover {
 
 .cards {
   width: 100%;
-  height: 800px;
-  background-color: var(--primary);
+  background-color: var(--tertairy);
 }
 
 .card_box {
@@ -84,7 +83,7 @@ nav a:hover {
   margin-left: 25px;
   margin-right: 25px;
   margin-top: 20px;
-  background-color: #e63b2e;
+  background-color: var(--tertairy);
 }
 .card:hover .card__caption {
   top: 50%;
