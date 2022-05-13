@@ -81,7 +81,7 @@
 			</figcaption>
 		</figure>
 	</div>
-</div>
+    </div>
     </div>
     <div class="cards"></div>
 </div>
