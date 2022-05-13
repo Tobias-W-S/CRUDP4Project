@@ -17,9 +17,9 @@
     <nav>
       <div class="navbar">
         <a href="index.php">Home</a>
-        <a>Cruises</a>
-        <a>Over ons</a>
-        <a>Contact</a>
+        <a href="cruises.php">Cruises</a>
+        <a href="about.php">Over ons</a>
+        <a href="contact.php">Contact</a>
       </div>
       <a>Login</a>
     </nav>

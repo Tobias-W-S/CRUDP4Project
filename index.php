@@ -2,9 +2,7 @@
       include("includes/nav.php")
     ?>
 <div class="background_landing">
-
     <div class="search_bar">
-        
         <form class="indexFilter" method="post" action="cruises.php">
             <label>Vind uw perfecte cruise!</label>
             <div>
@@ -14,11 +12,11 @@
                 <input type="text" placeholder="Aantal personen..">
                 <input type="submit" value="Vind mijn cruise">
             </div>    
-
-            
         </form>
     </div>
-
+</div>
+<div class="titel_card">
+    <h2>Kies hier jou favoriete cruise vakantie</h2>
 </div>
     <div class="cards">
     <div class="card_box">
@@ -26,7 +24,7 @@
             <figure class="card__thumb">
                 <img src="media/cruise_ship.jpg" alt="" class="card__image">
                 <figcaption class="card__caption">
-                    <h2 class="card__title">populaire cruises</h2>
+                    <h2 class="card__title">Populaire cruises</h2>
                     <p class="card__snippet">In de winter op een van onze cruises? dan bent u bij ons bij het juiste adres</p>
                     <a href="" class="card__button">Bekijk aanbod</a>
                 </figcaption>
@@ -67,7 +65,7 @@
 		<figure class="card__thumb">
 			<img src="media/europa.jpg" alt="" class="card__image">
 			<figcaption class="card__caption">
-				<h2 class="card__title">europa cruise</h2>
+				<h2 class="card__title">Europa cruise</h2>
 				<p class="card__snippet">In de winter op een van onze cruises? dan bent u bij ons bij het juiste adres</p>
 				<a href="" class="card__button">Bekijk aanbod</a>
 			</figcaption>
@@ -85,9 +83,6 @@
 	</div>
     </div>
     </div>
-
-
-
     <div class="cards"></div>
 </div>
 </body>
