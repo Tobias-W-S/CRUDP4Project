@@ -67,7 +67,9 @@ nav a:hover {
 
 .titel_card {
   text-align: center;
+
   background-color: var(--donkerblauw);
+
   padding-top: 10px;
 }
 

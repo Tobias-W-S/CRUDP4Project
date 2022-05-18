@@ -1,5 +1,7 @@
 <?php
-      include("includes/nav.php")
+      $sortname = "SELECT * FROM `cruises` WHERE `Eindbestemming` LIKE '" . $_POST["Bestemming"] . "' AND `Startbestemming` LIKE ' " . $_POST["Start"] . "' AND `Duur` LIKE '" . $_POST["Duur"] . "' AND `Aantal personen` LIKE '" . $_POST["Personen"] . "'";
+
+      include("includes/nav.php");
     ?>
     <div class="cruises_titel">
       <h2>kies hier uw cruise!</h2>
