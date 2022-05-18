@@ -283,7 +283,7 @@ padding-top: 10px;
 
 /*End Search bar css*/
 
-/*About us css*/
+/*Contact css*/
 .contact{
     display: flex;
 
@@ -347,4 +347,40 @@ padding-top: 10px;
 
 }
 
+/*End contact css*/
+
+/*About us css*/
+
+.about{
+    display: flex;
+
+
+    background-color: var(--tertairy05);
+    height: 75vh;
+    width: 85%;
+
+}
+
+.about img{
+    object-fit: cover;
+    max-width: 50%;
+}
+
+.about *{
+    width: 100%;
+    height: 100%;
+}
+
+.about p{
+  display: inline-block;
+  padding-left: 2em;
+  padding-top: 1em;
+
+  font-size: 1.5em;
+}
+
+.about p strong{
+  font-size: 2em;
+  font-weight: 600;
+}
 /*End about us css*/
