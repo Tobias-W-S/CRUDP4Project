@@ -1,6 +1,6 @@
 <?php
       include("includes/nav.php")
-    ?>
+?>
 <div class="background_landing">
     <div class="search_bar">
         <form class="indexFilter" method="post" action="cruises.php">
