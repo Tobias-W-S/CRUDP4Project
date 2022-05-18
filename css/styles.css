@@ -292,6 +292,11 @@ nav a:hover {
   height: 100%;
 }
 
+/*Contact css*/
+.contact{
+    display: flex;
+
+
 .contact p {
   display: inline-block;
   padding-left: 2em;
@@ -329,7 +334,14 @@ nav a:hover {
   width: 35%;
 }
 
+
 /*End about us css*/
+
+.contact form{
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+
 
 /*cruises*/
 .background_cruises {
@@ -354,11 +366,26 @@ nav a:hover {
   border-radius: 10px;
 }
 
+
 h2 {
   font-size: 1.2em;
   color: #4e4e4e;
   margin-bottom: 16px;
   margin-top: 7px;
+
+.contact form *{
+    width: 50%;
+    margin-bottom: 2%;
+}
+
+.contact form input{
+    margin-bottom: 5%;
+}
+
+.contact textarea{
+    resize: none;
+    height: 20%;
+
 }
 
 h3 {
@@ -376,6 +403,7 @@ img {
   top: 70%;
   display: none;
 }
+
 
 .product {
   position: absolute;
@@ -477,3 +505,42 @@ footer a {
 footer a:hover {
   color: #7d7d7d;
 }
+
+/*End contact css*/
+
+/*About us css*/
+
+.about{
+    display: flex;
+
+
+    background-color: var(--tertairy05);
+    height: 75vh;
+    width: 85%;
+
+}
+
+.about img{
+    object-fit: cover;
+    max-width: 50%;
+}
+
+.about *{
+    width: 100%;
+    height: 100%;
+}
+
+.about p{
+  display: inline-block;
+  padding-left: 2em;
+  padding-top: 1em;
+
+  font-size: 1.5em;
+}
+
+.about p strong{
+  font-size: 2em;
+  font-weight: 600;
+}
+/*End about us css*/
+
