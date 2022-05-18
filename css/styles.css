@@ -56,7 +56,6 @@ nav a:hover {
   height: 100vh;
   background-image: url("../media/new_background.jpg");
   background-repeat: no-repeat;
-  animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .background_landing .search_bar {
@@ -284,17 +283,6 @@ padding-top: 10px;
 
 /*End Search bar css*/
 
-@keyframes slide-in-fwd-center {
-  0% {
-    transform: translateZ(-1400px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateZ(0);
-    opacity: 1;
-  }
-}
-
 /*About us css*/
 .contact{
     display: flex;
@@ -326,18 +314,25 @@ padding-top: 10px;
 .contact form{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: baseline;
 
     height: 100%;
 
     padding: 5% 0;
 }
 
+.contact form *{
+    width: 50%;
+    margin-bottom: 2%;
+}
+
+.contact form input{
+    margin-bottom: 5%;
+}
+
 .contact textarea{
-    min-width: 35%;
-    min-height: 10vh;
-    max-width: 50%;
-    max-height: 25vh;
+    resize: none;
+    height: 20%;
 }
 
 .contact input[type=submit]{

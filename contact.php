@@ -13,6 +13,11 @@
         </p>
         <div>
             <form method="post">
+                <label>Mail: </label>
+                <input type="mail">
+                <label>Telefoonnummer: </label>
+                <input type="text">
+                <label>Uw bericht: </label>
                 <textarea></textarea>
                 <input type="submit">
             </form>
