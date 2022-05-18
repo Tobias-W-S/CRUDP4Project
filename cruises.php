@@ -3,10 +3,13 @@
 
       include("includes/nav.php");
     ?>
+    <div class="cruises_titel">
+      <h2>kies hier uw cruise!</h2>
+      </div>
 <div class="background_cruises">
 <div class="container">
   <div class="images">
-    <img src="media/cruise_ship.jpg" />
+    <img src="media/cruise1.jpg" />
   </div>
   <div class="product">
     <h2>Norwegian Cruise Line</h2>
@@ -19,7 +22,7 @@
 </div>
 <div class="container">
   <div class="images">
-    <img src="media/seabourn.jpg" />
+    <img src="media/cruise2.jpg" />
   </div>
   <div class="product">
     <h2>Oceania Cruises</h2>
