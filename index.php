@@ -6,10 +6,10 @@
         <form class="indexFilter" method="post" action="cruises.php">
             <label>Vind uw perfecte cruise!</label>
             <div>
-                <input type="text" placeholder="Bestemming..">
-                <input type="text" placeholder="Startpunt..">
-                <input type="text" placeholder="Duur..">
-                <input type="text" placeholder="Aantal personen..">
+                <input name="Bestemming" type="text" placeholder="Bestemming..">
+                <input name="Start" type="text" placeholder="Startpunt..">
+                <input name="Duur" type="text" placeholder="Duur..">
+                <input name="Personen" type="text" placeholder="Aantal personen..">
                 <input type="submit" value="Vind mijn cruise">
             </div>    
         </form>
