@@ -536,6 +536,10 @@ label {
   width: 100%;
 }
 
+label:hover {
+  background-color: #f85a3e;
+}
+
 .tab-label-content {
   width: 100%;
 }

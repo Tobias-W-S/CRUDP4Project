@@ -25,7 +25,8 @@
          <input type="radio" name="tabs" id="tab4">
          <div class="tab-label-content" id="tab4-content">
           <label for="tab4">Recenties</label>
-          <div class="tab-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, veritatis deserunt. Dolores perferendis vel corrupti voluptas reprehenderit ut quaerat delectus.</div>
+          <div class="tab-content">
+          </div>
 </div>
 </div>
 </body>
