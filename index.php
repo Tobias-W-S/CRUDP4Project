@@ -4,7 +4,7 @@
 <div class="background_landing">
     <div class="search_bar">
         <form class="indexFilter" method="post" action="cruises.php">
-            <label>Vind uw perfecte cruise!</label>
+            <label>Vindt uw perfecte cruise!</label>
             <div>
                 <input name="Bestemming" type="text" placeholder="Bestemming..">
                 <input name="Start" type="text" placeholder="Startpunt..">
@@ -16,7 +16,7 @@
     </div>
 </div>
 <div class="titel_card">
-    <h2>Kies hier jou favoriete cruise vakantie</h2>
+    <h2>Kies hier uw favoriete cruise vakantie</h2>
 </div>
     <div class="cards">
     <div class="card_box">

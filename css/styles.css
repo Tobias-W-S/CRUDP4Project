@@ -473,9 +473,6 @@ nav a:hover {
 }
 /*End about us css*/
 
-
-
-
 /*leesmeer_cruises.php*/
 .background_leesmeer {
   display: flex;
@@ -541,6 +538,10 @@ label {
   height: 56px;
   transition: color 0.2s ease;
   width: 100%;
+}
+
+label:hover {
+  background-color: #f85a3e;
 }
 
 .tab-label-content {

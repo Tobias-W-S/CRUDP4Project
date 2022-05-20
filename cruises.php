@@ -1,6 +1,12 @@
 <?php
   include("includes/nav.php");
 
+
+      include("includes/nav.php");
+    ?>
+    <div class="cruises_titel">
+      <h2>Kies hier uw cruise!</h2>
+
   $bestemming = "";
   $start = "";
   $duur = "";
@@ -16,6 +22,7 @@
 ?>
     <div class="cruises_titel">
       <h2>kies hier uw cruise!</h2>
+
       </div>
 <div class="background_cruises">
 <div class="container">
