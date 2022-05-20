@@ -4,9 +4,7 @@
 
       include("includes/nav.php");
     ?>
-    <div class="cruises_titel">
-      <h2>Kies hier uw cruise!</h2>
-
+<?php
   $bestemming = "";
   $start = "";
   $duur = "";
