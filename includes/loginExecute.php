@@ -24,11 +24,16 @@
 
 
 
-    $_SESSION['admin'] = true;
+    $_SESSION['user'] = $_POST['Gebruikersnaam'];
+    $_SESSION['id'] = session_id();
+
+    if($result[0]['Admin'] == 1){
+      $_SESSION['admin'] = true;
+    }
 
 
 
-    header('location: ../goedgedaan.php');
+    header('location: ../index.php');
 
     exit();
 
