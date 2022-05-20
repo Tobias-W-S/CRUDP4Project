@@ -17,6 +17,10 @@
   font-family: "Source Sans Pro", sans-serif;
 }
 
+.lowercase{
+  text-transform:lowercase;
+}
+
 /*nav bar*/
 nav {
   position: absolute;
@@ -583,3 +587,4 @@ label:hover {
     margin: 400px auto 0;
   }
 }
+

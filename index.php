@@ -10,7 +10,7 @@
                 <input name="Start" type="text" placeholder="Startpunt..">
                 <input name="Duur" type="text" placeholder="Duur..">
                 <input name="Personen" type="text" placeholder="Aantal personen..">
-                <input type="submit" value="Vind mijn cruise">
+                <input name="submitfilter" type="submit" value="Vind mijn cruise">
             </div>    
         </form>
     </div>
