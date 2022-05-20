@@ -23,5 +23,4 @@
       </div>
       <a>Login</a>
     </nav>
-  </body>
-</html>
+

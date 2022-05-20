@@ -468,3 +468,7 @@ nav a:hover {
   font-weight: 600;
 }
 /*End about us css*/
+
+.lowercase{
+  text-transform:lowercase;
+}
