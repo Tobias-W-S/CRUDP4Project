@@ -27,7 +27,7 @@
     <h3>Vanaf 800,- per persoon</h3>
     <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto quam dignissimos officiis natus aliquam laborum unde quasi. Quam, quidem. Consequuntur.</p>
     <div class="buttons">
-      <button class="add">Lees meer</button>
+    <button class='add' onclick="document.location='leesmeer_cruises.php'">lees meer</button>
     </div>
   </div>
 </div>
@@ -40,7 +40,7 @@
     <h3>Vanaf 700,- per persoon</h3>
     <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto quam dignissimos officiis natus aliquam laborum unde quasi. Quam, quidem. Consequuntur.</p>
     <div class="buttons">
-      <button class="add">Lees meer</button>
+    <button class='add' onclick="document.location='leesmeer_cruises.php'">lees meer</button>
     </div>
   </div>
 </div>
@@ -53,7 +53,7 @@
     <h3>Vanaf 900,- per persoon</h3>
     <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto quam dignissimos officiis natus aliquam laborum unde quasi. Quam, quidem. Consequuntur.</p>
     <div class="buttons">
-      <button class="add">Lees meer</button>
+    <button class='add' onclick="document.location='leesmeer_cruises.php'">lees meer</button>
     </div>
   </div>
 </div>
@@ -66,7 +66,7 @@
     <h3>Vanaf 750,- per persoon</h3>
     <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto quam dignissimos officiis natus aliquam laborum unde quasi. Quam, quidem. Consequuntur.</p>
     <div class="buttons">
-      <button class="add">Lees meer</button>
+    <button class='add' onclick="document.location='leesmeer_cruises.php'">lees meer</button>
     </div>
   </div>
 </div>
