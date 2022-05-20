@@ -1,7 +1,7 @@
 <?php 
 
 $host = "localhost";
-$db = "crud_cruise";
+$db = "cruisetours";
 $user = "root";
 $pass = "";
 $charset = "utf8mb4";

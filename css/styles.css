@@ -17,6 +17,10 @@
   font-family: "Source Sans Pro", sans-serif;
 }
 
+.lowercase{
+  text-transform:lowercase;
+}
+
 /*nav bar*/
 nav {
   position: absolute;
@@ -469,6 +473,9 @@ nav a:hover {
 }
 /*End about us css*/
 
+
+
+
 /*leesmeer_cruises.php*/
 .background_leesmeer {
   display: flex;
@@ -579,3 +586,4 @@ label {
     margin: 400px auto 0;
   }
 }
+

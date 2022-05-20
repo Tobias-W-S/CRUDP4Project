@@ -1,8 +1,19 @@
 <?php
-      $sortname = "SELECT * FROM `cruises` WHERE `Eindbestemming` LIKE '" . $_POST["Bestemming"] . "' AND `Startbestemming` LIKE ' " . $_POST["Start"] . "' AND `Duur` LIKE '" . $_POST["Duur"] . "' AND `Aantal personen` LIKE '" . $_POST["Personen"] . "'";
+  include("includes/nav.php");
 
-      include("includes/nav.php");
-    ?>
+  $bestemming = "";
+  $start = "";
+  $duur = "";
+  $personen = "";
+
+  if(isset($_POST['submitfilter'])){
+    $bestemming = $_POST['Bestemming'];
+    $start = $_POST['Start'];
+    $duur = $_POST['Duur'];
+    $personen = $_POST['Personen'];
+  }
+  $sortname = "SELECT * FROM `cruises` WHERE `Eindbestemming` LIKE '" . $bestemming . "' AND `Startbestemming` LIKE ' " . $start . "' AND `Duur` LIKE '" . $duur . "' AND `Aantal personen` LIKE '" . $personen . "'"; 
+?>
     <div class="cruises_titel">
       <h2>kies hier uw cruise!</h2>
       </div>
