@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -21,6 +22,13 @@
         <a href="about.php">Over ons</a>
         <a href="contact.php">Contact</a>
       </div>
-      <a>Login</a>
+      <?php 
+        if(isset($_SESSION['id'])){
+          include_once("logoutNav.php");
+        }
+        else{
+          include_once("loginNav.php");
+        }
+      ?>
     </nav>
 
