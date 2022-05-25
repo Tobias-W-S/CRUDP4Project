@@ -16,7 +16,7 @@
   $sortname = "SELECT * FROM `cruises` WHERE `Eindbestemming` LIKE '" . $bestemming . "' AND `Startbestemming` LIKE ' " . $start . "' AND `Duur` LIKE '" . $duur . "' AND `Aantal personen` LIKE '" . $personen . "'"; 
 ?>
     <div class="cruises_titel">
-      <h2>kies hier uw cruise!</h2>
+      <h2>Kies hier uw cruise!</h2>
 
       </div>
 <div class="background_cruises">
