@@ -20,7 +20,7 @@
           <input type="text" id="onderwerp" name="onderwerp" placeholder="Typ hier het onderwerp">
       
           <label for="bericht">Uw bericht</label>
-          <textarea id="bericht" name="bericht" placeholder="Schrijf hier uw bericht" style="height:200px"></textarea>
+          <textarea type="text" id="bericht" name="bericht" placeholder="Schrijf hier uw bericht" style="height:200px"></textarea>
       
           <input type="submit" name="CONTACT" value="Verzenden">
         </form>
