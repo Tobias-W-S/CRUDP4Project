@@ -283,7 +283,7 @@ nav a:hover {
   width: 12%;
 }
 
-/*contact*/
+/*contact.php*/
 .background_contact {
   width: 100%;
   height: 100vh;
@@ -307,7 +307,7 @@ nav a:hover {
 .contact_form {
   border-radius: 5px;
   padding: 20px;
-  width: 30%;
+  width: 22%;
 }
 
 .contact_form input[type="text"],
@@ -324,7 +324,7 @@ textarea {
   font-size: 15px;
 }
 
-.contact_form  input[type="submit"] {
+.contact_form input[type="submit"] {
   background-color: var(--primary);
   color: white;
   padding: 12px 20px;
@@ -333,7 +333,7 @@ textarea {
   cursor: pointer;
 }
 
-.contact_form  input[type="submit"]:hover {
+.contact_form input[type="submit"]:hover {
   background-color: var(--quaternary);
   color: black;
 }
@@ -341,7 +341,7 @@ textarea {
   font-size: 18px;
 }
 
-/*cruises*/
+/*cruises.php*/
 .cruises_titel h2 {
   padding-left: 43%;
   padding-top: 80px;
@@ -409,7 +409,7 @@ textarea {
   text-align: justify;
 }
 
-.background_cruises .container .product button {
+.background_cruises .container .product a {
   background: var(--primary);
   padding: 10px;
   display: inline-block;
@@ -421,18 +421,19 @@ textarea {
   letter-spacing: 1px;
   color: #f5f5f5;
   cursor: pointer;
+  text-decoration: none;
 }
-.background_cruises .container .product button:hover {
+.background_cruises .container .product a:hover {
   background: var(--donkerblauw);
   transition: all 0.4s ease-in-out;
   color: black;
 }
 
-.background_cruises .container .product button .add {
+.background_cruises .container .product a .add {
   width: 67%;
 }
 
-/*About us css*/
+/*about.php*/
 .about {
   display: flex;
 

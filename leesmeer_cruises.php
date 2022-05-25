@@ -1,5 +1,12 @@
 <?php
-    include("includes/nav.php")
+    include("includes/nav.php");
+    include("includes/connect.php");
+
+    $sql = "SELECT * FROM `cruises` WHERE `reisID` = $_GET[id]";
+    $stmt = $connect->prepare($sql);
+    $stmt->execute();
+    $result = $stmt->fetchAll();
+    foreach($result as $value){
 ?>
 <div class="background_leesmeer">
     <div class="info_cruises"></div>
@@ -7,19 +14,19 @@
         <input type="radio" name="tabs" id="tab1" checked>
         <div class="tab-label-content" id="tab1-content">
           <label for="tab1">Beschrijving</label>
-          <div class="tab-content">Bij deze beleving bent u verzekerd van een goede prijs en een comfortabele hut. Vaste diensten als alle maaltijden, havengelden en toegang tot de meeste faciliteiten aan boord zijn altijd inbegrepen. Tevens kunt u (indien beschikbaar) uw gewenste hutnummer zelf uitkiezen en uw voorkeur voor dinerzitting aangeven.</div>
+          <div class="tab-content"><?php echo '<strong>Voor ' . $value['Aantal personen'] . ' Personen</strong> ' . $value['Beschrijving'];?></div>
         </div>
          
         <input type="radio" name="tabs" id="tab2">
         <div class="tab-label-content" id="tab2-content">
           <label for="tab2">Prijzen</label>
-          <div class="tab-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum laborum cumque maxime repudiandae obcaecati nisi suscipit sed voluptatem quaerat aliquid.</div>
+          <div class="tab-content">De kosten zijn € <?php echo $value['Prijs'];?> per persoon.</div>
         </div>
         
         <input type="radio" name="tabs" id="tab3">
         <div class="tab-label-content" id="tab3-content">
-          <label for="tab3">Weersverwachting</label>
-          <div class="tab-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident inventore voluptate perspiciatis quas recusandae quam cupiditate non repellat ut reiciendis?</div>
+          <label for="tab3">Duur</label>
+          <div class="tab-content">Deze cruise duurt <?php echo $value['Duur'];?> dagen. Van <?php echo $value['Startbestemming']?> naar <?php echo $value['Eindbestemming']?></div>
         </div>
       
          <input type="radio" name="tabs" id="tab4">
@@ -32,5 +39,6 @@
 </div>
 </div>
 </div>
+<?php }?>
 </body>
 </html>
