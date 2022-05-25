@@ -18,6 +18,7 @@
         <label>Wachtwoord</label>
         <input name="Wachtwoord" type="password" required>
         <input name="submitlogin" type="submit" value="Login">
+        <input name="submitAanmelden" type="submit" value="Aanmelden">
     </form>
 </div>
     <script src="js/main.js"></script>
