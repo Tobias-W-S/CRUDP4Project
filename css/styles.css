@@ -324,7 +324,7 @@ textarea {
   font-size: 15px;
 }
 
-.contact_form  input[type="verzenden"] {
+.contact_form  input[type="submit"] {
   background-color: var(--primary);
   color: white;
   padding: 12px 20px;
@@ -333,7 +333,7 @@ textarea {
   cursor: pointer;
 }
 
-.contact_form  input[type="verzenden"]:hover {
+.contact_form  input[type="submit"]:hover {
   background-color: var(--quaternary);
   color: black;
 }

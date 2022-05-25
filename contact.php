@@ -12,7 +12,7 @@
         </p>
     </div>
     <div class="contact_form">
-        <form action="">
+        <form action="includes/user.php" method="post">
           <label for="e-mail">Uw e-mail</label>
           <input type="text" id="e-mail" name="e-mail" placeholder="Uw e-mailadres">
       
@@ -22,7 +22,7 @@
           <label for="bericht">Uw bericht</label>
           <textarea id="bericht" name="bericht" placeholder="Schrijf hier uw bericht" style="height:200px"></textarea>
       
-          <input type="verzenden" value="Verzenden">
+          <input type="submit" name="CONTACT" value="Verzenden">
         </form>
       </div>
 </div>
