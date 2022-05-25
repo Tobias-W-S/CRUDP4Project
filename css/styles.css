@@ -335,6 +335,7 @@ textarea {
 
 .contact_form  input[type="verzenden"]:hover {
   background-color: var(--quaternary);
+  color: black;
 }
 .contact_form label {
   font-size: 18px;
