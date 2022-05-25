@@ -578,30 +578,31 @@ textarea {
   background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
+  text-align: center;
 }
 
 .login_form input[type="email"],
 select,
 textarea {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
   padding: 12px;
   border-radius: 4px;
   margin-top: 6px;
   margin-bottom: 16px;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 15px;
 }
 
 .login_form input[type="password"],
 select,
 textarea {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
   padding: 12px;
   border-radius: 4px;
   margin-top: 6px;
   margin-bottom: 16px;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 15px;
 }
 
 .login_form  input[type="submit"] {
@@ -619,4 +620,5 @@ textarea {
 }
 .login_form label {
   font-size: 18px;
+  color: white;
 }
