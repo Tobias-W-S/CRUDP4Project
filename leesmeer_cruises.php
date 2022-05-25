@@ -31,5 +31,6 @@
           <div class="tab-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, veritatis deserunt. Dolores perferendis vel corrupti voluptas reprehenderit ut quaerat delectus.</div>
 </div>
 </div>
+</div>
 </body>
 </html>
