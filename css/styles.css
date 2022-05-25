@@ -409,7 +409,7 @@ textarea {
   text-align: justify;
 }
 
-.background_cruises .container .product button {
+.background_cruises .container .product a {
   background: var(--primary);
   padding: 10px;
   display: inline-block;
@@ -421,14 +421,15 @@ textarea {
   letter-spacing: 1px;
   color: #f5f5f5;
   cursor: pointer;
+  text-decoration: none;
 }
-.background_cruises .container .product button:hover {
+.background_cruises .container .product a:hover {
   background: var(--donkerblauw);
   transition: all 0.4s ease-in-out;
   color: black;
 }
 
-.background_cruises .container .product button .add {
+.background_cruises .container .product a .add {
   width: 67%;
 }
 
