@@ -1,6 +1,6 @@
 <?php 
 
-    include('includes/connect.php');
+    include('../includes/connect.php');
 ?>
 
 <!DOCTYPE html>
@@ -12,7 +12,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form method="post" action="includes/loginExecute.php">
+    <form method="post" action="../includes/loginExecute.php">
         <input name="Gebruikersnaam" autocapitalize="none" type="email" class="lowercase" required>
         <input name="Wachtwoord" type="password" required>
         <input name="submitlogin" type="submit" value="Login">
