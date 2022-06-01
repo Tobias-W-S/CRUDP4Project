@@ -2,18 +2,19 @@
       include("includes/nav.php");
 ?>
 <div class="background_landing">
-    <div class="search_bar">
-        <form class="indexFilter" method="post" action="cruises.php">
-            <label>Vindt uw perfecte cruise!</label>
-            <div>
-                <input name="Bestemming" type="text" placeholder="Bestemming..">
-                <input name="Start" type="text" placeholder="Startpunt..">
-                <input name="Duur" type="text" placeholder="Duur..">
-                <input name="Personen" type="text" placeholder="Aantal personen..">
-                <input name="submitfilter" type="submit" value="Vind mijn cruise">
-            </div>    
-        </form>
-    </div>
+	<div class="logo"></div>
+		<div class="search_bar">
+			<h2>Vindt mijn perfecte cruise</h2>
+			<form method="post" action="cruises.php">
+				<div class="cruise_zoeken">
+					<input name="Bestemming" type="text" placeholder="Bestemming..">
+					<input name="Start" type="text" placeholder="Startpunt..">
+					<input name="Duur" type="text" placeholder="Duur..">
+					<input name="Personen" type="text" placeholder="Aantal personen..">
+					<input name="submitfilter" type="submit" value="Zoeken">
+				</div>    
+			</form>
+		</div>
 </div>
 <div class="titel_card">
     <h2>Kies hier uw favoriete cruise vakantie</h2>
