@@ -2,6 +2,8 @@
 
     include("connect.php");
 
+
+    //Contactformulier verzenden
     if(isset($_POST['CONTACT'])){
         $sql =  "INSERT INTO `contact`(`Email`, `Onderwerp`, `Bericht`) 
         VALUES (:Email, :Onderwerp, :Bericht)";
@@ -12,3 +14,6 @@
         $stmt->execute(); 
         header("location: ../contact.php");
     }
+
+
+    
