@@ -700,3 +700,75 @@ textarea {
   font-size: 18px;
   color: white;
 }
+
+/*admin*/
+
+nav {
+  position: absolute;
+  height: 9vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .navbar_admin {
+  display: flex;
+  flex-direction: row;
+}
+
+nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  padding: 0 1em;
+  padding-bottom: 5px;
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+
+.toevoegen_tabel {
+  width: 100%;
+  height: 100vh;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 70px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+  .toevoegen_tabel h2 {
+    font-size: 30px;
+  }
+
+  .toevoegen_tabel table {
+    border-collapse: collapse;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+  }
+
+    td,
+    th {
+      border: 1px solid #ddd;
+      letter-spacing: 3px;
+      font-size: 13px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+.toevoegen_tabel input {
+  border-style: hidden;
+  padding: 20px;
+  width: 100%;
+}
+.toevoegen_tabel .input_border:focus {
+  outline: none;
+}
+
+.button_admin:hover {
+  background-color: #e63b2e;
+}
