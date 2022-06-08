@@ -18,7 +18,7 @@
 
 
 
-   if ($result[0]['Mail'] == $_POST['Gebruikersnaam'] AND $result[0]['Password'] == $_POST['Wachtwoord']) {
+   if ($result[0]['Mail'] == $_POST['Gebruikersnaam'] AND $result[0]['Password'] == $_POST['Wachtwoord'] AND $result[0]['Geaccepteerd'] == 1) {
 
     session_start();
 
@@ -29,7 +29,7 @@
 
     if($result[0]['Admin'] == 1){
       $_SESSION['admin'] = true;
-      header('location: ../admin.php');
+      header('location: admin.php');
     }
     else{
       header('location: ../index.php');
@@ -42,9 +42,26 @@
 
     exit();
 
-   }
+  }
 
-   
+
+
+}
+
+  //Gebruiker aanmelden
+
+
+  else if(isset($_POST['submitAanmelden'])){
+    $sql = "INSERT INTO `accounts`(`Mail`, `Password`, `Admin`, `Geaccepteerd`) 
+    VALUES (:Email,:Wachtwoord,'0','0')";
+    $stmt = $connect->prepare($sql);
+    $stmt->bindParam(":Email", $_POST['Gebruikersnaam']);
+    $stmt->bindParam(":Wachtwoord", $_POST['Wachtwoord']);
+    $stmt->execute(); 
+    header("location: ../index.php");   
+    
+    exit();
+  }   
 
   else {
 
@@ -54,6 +71,7 @@
 
   }
 
-}
+  var_dump($_POST['submitAanmelden']);
+
 
 ?>
