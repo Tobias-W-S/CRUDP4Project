@@ -12,7 +12,7 @@
       <div class="tab-label-content" id="tab1-content">
         <label for="tab1">Beschrijving</label>
         <div class="tab-content">
-          ?php echo '<strong
+          <?php echo '<strong
             >Voor ' . $value['Aantal personen'] . ' Personen</strong
           >
           ' . $value['Beschrijving'];?>
