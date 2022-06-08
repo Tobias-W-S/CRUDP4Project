@@ -29,11 +29,16 @@
 
     if($result[0]['Admin'] == 1){
       $_SESSION['admin'] = true;
+      header('location: ../admin.php');
+    }
+    else{
+      header('location: ../index.php');
     }
 
 
 
-    header('location: ../index.php');
+
+
 
     exit();
 
@@ -43,7 +48,7 @@
 
   else {
 
-    header('location: ../index.php');
+    header('location: ../php/login.php');
 
     exit();
 
