@@ -21,7 +21,7 @@
   text-transform: lowercase;
 }
 
-/*nav bar*/
+/*nav.php*/
 nav {
   position: absolute;
   height: 9vh;
@@ -62,19 +62,40 @@ nav a:hover {
   background-repeat: no-repeat;
 }
 
-.background_landing .search_bar {
-  width: 65%;
-  height: 100px;
-  background-color: var(--secundary05);
-  margin-top: 350px;
+.arrow {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-image: url("../media/arrow.png");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  transition: all 0.3s;
+  margin-top: 130px;
+  margin-bottom: 8px;
+}
+
+.arrow:hover {
+  background-image: url("../media/arrow_hover.png");
+}
+
+.logo {
+  background-image: url("../media/logo.png");
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 350px;
+  margin-top: 120px;
+  animation: slide-in-left 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .titel_card {
   text-align: center;
-
   background-color: var(--donkerblauw);
-
   padding-top: 10px;
+}
+
+.titel_card h2 {
+  color: var(--primary);
 }
 
 .cards {
@@ -196,8 +217,8 @@ nav a:hover {
   transition: 0.3s;
 }
 .card__button:hover {
-  color: black;
-  background-color: white;
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
 }
 
 .disclaimer {
@@ -224,121 +245,71 @@ nav a:hover {
   background-color: var(--primary);
 }
 
-/*Search bar css*/
-.indexFilter {
+/*filter bar*/
+.background_landing .search_bar {
+  width: 70%;
+  background-color: var(--primary);
+  height: auto;
+  font-family: "Source Sans Pro", sans-serif;
+  padding-bottom: 17px;
+}
+
+.search_bar {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   height: 100%;
 }
 
-.indexFilter input {
+.search_bar input {
   border-style: solid;
   border-width: 1px;
   border-color: rgb(165, 185, 207);
-
   transition-duration: 0.2s;
-
   outline: none;
-
   height: 2em;
-
   margin-top: 1em;
+  margin-left: 3px;
+  margin-right: 3px;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
-.indexFilter input[type="text"] {
+.search_bar input[type="text"] {
   font-weight: 600;
   padding-left: 0.25em;
 }
 
-.indexFilter input:focus {
+.search_bar input:focus {
   border-style: solid;
   border-width: 2px;
-
   border-color: rgb(129, 163, 199);
 }
 
-.indexFilter > div {
+.search_bar .cruise_zoeken {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   height: 100%;
+  width: 100%;
 }
 
-.indexFilter label {
+.search_bar h2 {
   margin-top: 0.25em;
-
   font-weight: 600;
   font-size: 21px;
   text-align: center;
 }
 
-.indexFilter input[type="submit"] {
-  font-family: "Source Sans Pro", sans-serif;
+.search_bar input[type="submit"] {
   font-weight: 600;
-  background-color: var(--quaternary);
-
   border-style: solid;
-  border-radius: 1em;
-  width: 12%;
+  width: 17%;
+  background-color: white;
 }
 
-/*contact.php*/
-.background_contact {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-image: url("../media/contact.jpg");
-  background-repeat: no-repeat;
-}
-
-.contact p {
-  display: inline-block;
-  font-size: 1.5em;
-}
-
-.contact p strong {
-  font-size: 30px;
-  font-weight: 600;
-}
-
-.contact_form {
-  border-radius: 5px;
-  padding: 20px;
-  width: 22%;
-}
-
-.contact_form input[type="text"],
-select,
-textarea {
-  width: 100%;
-  padding: 12px;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 15px;
-}
-
-.contact_form input[type="submit"] {
-  background-color: var(--primary);
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.contact_form input[type="submit"]:hover {
+.search_bar input[type="submit"]:hover {
   background-color: var(--quaternary);
-  color: black;
-}
-.contact_form label {
-  font-size: 18px;
 }
 
 /*cruises.php*/
@@ -431,38 +402,6 @@ textarea {
 
 .background_cruises .container .product a .add {
   width: 67%;
-}
-
-/*about.php*/
-.about {
-  display: flex;
-
-  background-color: var(--tertairy05);
-  height: 75vh;
-  width: 85%;
-}
-
-.about img {
-  object-fit: cover;
-  max-width: 50%;
-}
-
-.about * {
-  width: 100%;
-  height: 100%;
-}
-
-.about p {
-  display: inline-block;
-  padding-left: 2em;
-  padding-top: 1em;
-
-  font-size: 1.5em;
-}
-
-.about p strong {
-  font-size: 2em;
-  font-weight: 600;
 }
 
 /*leesmeer_cruises.php*/
@@ -570,6 +509,90 @@ textarea {
   display: none;
 }
 
+/*about.php*/
+.background_about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../media/bg.jpg");
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.about_text {
+  width: 60%;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  animation: text-focus-in 0.7s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+/*contact.php*/
+.background_contact {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: url("../media/contact.jpg");
+  background-repeat: no-repeat;
+}
+
+.background_contact .contact {
+  margin-bottom: 100px;
+  text-align: center;
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.contact p {
+  display: inline-block;
+  font-size: 20px;
+}
+
+.contact p strong {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.contact_form {
+  border-radius: 5px;
+  padding: 20px;
+  width: 22%;
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.contact_form input[type="text"],
+select,
+textarea {
+  width: 295px;
+  padding: 12px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 15px;
+}
+
+.contact_form input[type="submit"] {
+  background-color: var(--primary);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact_form input[type="submit"]:hover {
+  background-color: var(--quaternary);
+  color: black;
+}
+.contact_form label {
+  font-size: 18px;
+}
+
 /*login.php*/
 .login_form {
   display: flex;
@@ -606,7 +629,7 @@ textarea {
   margin-bottom: 16px;
 }
 
-.login_form  input[type="submit"] {
+.login_form input[type="submit"] {
   background-color: var(--primary);
   color: white;
   padding: 12px 20px;
@@ -622,4 +645,91 @@ textarea {
 .login_form label {
   font-size: 18px;
   color: white;
+}
+
+/*aanmelden.php*/
+.aanmelden_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../media/background_login.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+.aanmelden_form input[type="email"],
+select,
+textarea {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 12px;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+.aanmelden_form input[type="password"],
+select,
+textarea {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 12px;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+.aanmelden_form input[type="submit"] {
+  background-color: var(--primary);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.aanmelden_form input[type="submit"]:hover {
+  background-color: var(--quaternary);
+  color: black;
+}
+.aanmelden_form label {
+  font-size: 18px;
+  color: white;
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes scale-in-center {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
