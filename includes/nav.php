@@ -24,6 +24,7 @@
       </div>
       <?php 
         if(isset($_SESSION['id'])){
+          include_once("accountNav.php");
           include_once("logoutNav.php");
         }
         else{
