@@ -22,11 +22,11 @@
           required
         />
         <label>Wachtwoord</label>
-        <input name="Wachtwoord" type="password" required />
-        <input name="submitlogin" type="submit" value="Aanmelden" />
-        <input name="submitAanmelden" type="submit" value="Registreren" />
-      </form>
-    </div>
+        <input name="Wachtwoord" type="password" required>
+        <input name="submitlogin" type="submit" value="Login">
+        <input name="submitAanmelden" type="submit" value="Aanmelden">
+    </form>
+</div>
     <script src="js/main.js"></script>
   </body>
 </html>
