@@ -25,7 +25,8 @@
         echo '<h3>Vanaf €' . $value['Prijs'] . ' per persoon</h3>';
         echo '<p class="desc">' . $value['Beschrijving'] . '</p>';
         echo '<div class="buttons">';
-        echo '<a href="leesmeer_cruises.php?id=' . $value['reisID'] .'" id=' . $value['reisID'] . ' class="add">lees meer</a>';
+        echo '<a href="leesmeer_cruises.php?id=' . $value['reisID'] .'" id=' . $value['reisID'] . ' class="add">lees meer</a><br>';
+        echo '<br><a href="php/boekingVerwijder.php?id=' . $value['boekingID'] .'" id=' . $value['boekingID'] . ' class="add">verwijder</a>';
         echo '</div>';
         echo '</div>';
         echo '</div>';
