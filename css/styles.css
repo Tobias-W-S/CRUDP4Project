@@ -738,27 +738,27 @@ nav a:hover {
   padding-right: 60px;
   padding-top: 70px;
   text-align: center;
-  margin-bottom: 100px;
+  padding-bottom: 100px;
 }
-  .toevoegen_tabel h2 {
-    font-size: 30px;
-  }
+.toevoegen_tabel h2 {
+  font-size: 30px;
+}
 
-  .toevoegen_tabel table {
-    border-collapse: collapse;
-    width: 100%;
-    height: auto;
-    margin-top: 30px;
-  }
+.toevoegen_tabel table {
+  border-collapse: collapse;
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
 
-    td,
-    th {
-      border: 1px solid #ddd;
-      letter-spacing: 3px;
-      font-size: 13px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
+td,
+th {
+  border: 1px solid #ddd;
+  letter-spacing: 3px;
+  font-size: 13px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
 .toevoegen_tabel input {
   border-style: hidden;
@@ -771,4 +771,43 @@ nav a:hover {
 
 .button_admin:hover {
   background-color: #e63b2e;
+}
+
+/*bevestingbezoeker.php*/
+.bezoeker_tabel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  padding-top: 70px;
+  padding-left: 60px;
+  padding-right: 60px;
+  text-align: center;
+}
+
+.bezoeker_tabel table {
+  border-collapse: collapse;
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+
+.bezoeker_tabel h2 {
+  font-size: 30px;
+}
+
+.bezoeker_tabel table,
+th,
+td {
+  border: 1px solid #ddd;
+  letter-spacing: 3px;
+  font-size: 13px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.bezoeker_tabel input {
+  border-style: hidden;
+  padding: 12px;
+  width: 70%;
 }
