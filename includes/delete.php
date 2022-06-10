@@ -16,10 +16,56 @@
   </head>
   <body>
     <nav>
-      <div class="navbar">
+      <div class="navbar_admin">
         <a href="admin.php">Aanmaken</a>
         <a href="delete.php">Aanpassen en verwijderen</a>
         <a href="bevestigbezoeker.php">Bevestiging bezoeker</a>
         <a href="">log uit</a>
       </div>
     </nav>
+    <div class="toevoegen_tabel">
+    <h2>Cruise toevoegen</h2>
+      <table>
+        <tr>
+          <form class=form_admin action="php/create.php" method="POST">
+            <tr>
+              <th>Cruise titel</th>
+              <td><input type="text" value="<?php  ?>" name="naam" class="input_border"></td>
+              <th><input type="submit" name="submit" class="button_admin" value></th>
+            </tr>
+            <tr>
+              <th>Startbestemming</th>
+              <td><input type="text" name="Startbestemming" class="input_border"></td>
+            </tr>
+            <tr>
+              <th>Eindbestemming</th>
+              <td><input type="text" name="Eindbestemming" class="input_border"></td>
+            </tr>
+            <tr>
+              <th>Prijs per persoon</th>
+              <td><input type="text" name="prijs" class="input_border"></td>
+            </tr>
+            <tr>
+              <th>Omschrijving</th>
+              <td><input type="text" name="omschrijving" class="input_border"></td>
+            </tr>
+            <tr>
+              <th>Datum</th>
+              <td><input type="text" name="Datum" class="input_border"></td>
+            </tr>
+            <tr>
+              <th>Aantal personen</th>
+              <td><input type="text" name="Aantal personen" class="input_border"></td>
+            </tr>
+            <tr>
+              <th>Afbeelding</th>
+              <td><input type="text" name="Afbeelding" class="input_border"></td>
+            </tr>
+            <tr>
+              <th>Opslaan</th>
+              <th><input type="submit" name="submit" class="button_admin"></th>
+            </tr>
+          </form>
+        </tr>
+      </table>
+    </div>
