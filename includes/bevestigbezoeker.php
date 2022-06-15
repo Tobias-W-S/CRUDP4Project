@@ -20,6 +20,8 @@
         <a href="admin.php">Aanmaken</a>
         <a href="delete.php">Aanpassen en verwijderen</a>
         <a href="bevestigbezoeker.php">Informatie gebruiker</a>
+        <a href="berichtlezen.php">Bericht lezen</a>
+
         <a href="">log uit</a>
       </div>
     </nav>
@@ -32,6 +34,14 @@
     <th>admin</th>
     <th>Accepteren</th>
     <th>Boekingen</th>
+  </tr>
+  <tr>
+  <td><input type="text" value="" name="naam" class="input_border"></td>
+  <td><input type="text" value="" name="naam" class="input_border"></td>
+  <td><input type="text" value="" name="naam" class="input_border"></td>
+  <td><input type="submit" name="submit" class="button_admin" value="Accepteren"></td>
+  <td><input type="submit" name="submit" class="button_admin" value="Bekijk boekingen"></td>
+  </tr>
     <th>Pas aan</th>
     <th>Verwijderen</th>
   </tr>
