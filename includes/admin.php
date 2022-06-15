@@ -1,4 +1,11 @@
-
+<?php 
+  session_start();
+  include("connect.php");
+  if($_SESSION['admin'] != true){
+    header("location: ../index.php");
+    exit();
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,7 +25,7 @@
     <nav>
       <div class="navbar_admin">
         <a href="admin.php">Aanmaken</a>
-        <a href="delete.php">Aanpassen en verwijderen</a>
+        <a href="edit.php">Aanpassen en verwijderen</a>
         <a href="bevestigbezoeker.php">Informatie gebruiker</a>
         <a href="berichtlezen.php">Bericht lezen</a>
 
@@ -55,8 +62,8 @@
               <td><input type="date" name="Datum" class="input_border"></td>
             </tr>
             <tr>
-              <th>Duur</th>
-              <td><input type="text" name="Duur" class="input_border"></td>
+              <th>Datum</th>
+              <td><input type="date" name="EindDatum" class="input_border"></td>
             </tr>
             <tr>
               <th>Aantal personen</th>

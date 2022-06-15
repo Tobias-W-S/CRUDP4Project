@@ -9,7 +9,8 @@
       <div class="cruise_zoeken">
         <input name="Bestemming" type="text" placeholder="Bestemming.." />
         <input name="Start" type="text" placeholder="Startpunt.." />
-        <input name="Duur" type="text" placeholder="Duur.." />
+        <input name="StartDatum" type="date" />
+        <input name="EindDatum" type="date" />
         <input name="Personen" type="text" placeholder="Aantal personen.." />
         <input name="submitfilter" type="submit" value="Zoeken" />
       </div>
