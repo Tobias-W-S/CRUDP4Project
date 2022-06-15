@@ -20,6 +20,7 @@
         <a href="admin.php">Aanmaken</a>
         <a href="delete.php">Aanpassen en verwijderen</a>
         <a href="bevestigbezoeker.php">Informatie gebruiker</a>
+        <a href="berichtlezen.php">Bericht lezen</a>
         <a href="">log uit</a>
       </div>
     </nav>

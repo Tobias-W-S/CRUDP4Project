@@ -1,3 +1,6 @@
+<?php
+include("connect.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -23,23 +26,30 @@
         <a href="">log uit</a>
       </div>
     </nav>
-    <div class="bezoeker_tabel">
-    <h2>Informatie bezoeker</h2>
-<table>
-  <tr>
-    <th>E-mailadres</th>
-    <th>Wachtwoord</th>
-    <th>admin</th>
-    <th>Accepteren</th>
-    <th>Boekingen</th>
-  </tr>
-  <tr>
-  <td><input type="text" value="" name="naam" class="input_border"></td>
-  <td><input type="text" value="" name="naam" class="input_border"></td>
-  <td><input type="text" value="" name="naam" class="input_border"></td>
-  <td><input type="submit" name="submit" class="button_admin" value="Accepteren"></td>
-  <td><input type="submit" name="submit" class="button_admin" value="Bekijk boekingen"></td>
-  </tr>
-</table>
+    <?php
+      $sql = "SELECT * FROM `contact`";
+
+      $stmt = $connect->prepare($sql);
+  
+      $stmt->execute();
+  
+      $result = $stmt->fetchAll();
+      ?>
+<div class="tabel">
+      <h2>Bericht lezen van gebruiker</h2>
+      <table>
+        <tr>
+          <th>e-mailadres</th>
+          <th>Onderwerp</th>
+          <th>bericht</th>
+        </tr>
+        <?php foreach ($result as $contact){ ?>
+        <tr>
+          <th><?php echo $contact['Email'] ?></th>
+          <th><?php echo $contact['Onderwerp'] ?></th>
+          <th><?php echo $contact['Bericht'] ?></th>
+        </tr>
+        <?php }
+        ?>
+      </table>
     </div>
-   
