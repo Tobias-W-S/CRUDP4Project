@@ -2,12 +2,12 @@
     include("includes/nav.php");
     include("includes/connect.php");
 
-    if(!isset($_SESSION['id'])){
+    if($_SESSION['admin'] != true){
         header("location: index.php");
         exit();
     }
 
-    $sql = "SELECT * FROM `accounts` JOIN `boekingen` USING(`USER_ID`) LEFT JOIN `cruises` USING(`reisID`) WHERE `Mail` ='" . $_SESSION['user'] . "'";
+    $sql = "SELECT * FROM `accounts` JOIN `boekingen` USING(`USER_ID`) LEFT JOIN `cruises` USING(`reisID`) WHERE `USER_ID` = $_GET[id]";
 
     $stmt = $connect->prepare($sql);
 

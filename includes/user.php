@@ -15,5 +15,22 @@
         header("location: ../contact.php");
     }
 
+    if(isset($_POST['RECENSIE'])){
+        $sql = "SELECT `USER_ID` FROM `accounts` WHERE `Mail` ='" . $_POST['e-mail'] . "'";
+        $stmt = $connect->prepare($sql);
+        $stmt->execute(); 
+        $result = $stmt->fetchAll();
+        foreach($result as $value){
+            $user = $value['USER_ID'];
+        }
 
+        $sql = "INSERT INTO `recensies` (`USER_ID`, `reisID`, `recensieText`, `validatie`) 
+        VALUES(:User, :Reis, :Recensie, '1')";
+        $stmt = $connect->prepare($sql);
+        $stmt->bindParam(":User", $user);
+        $stmt->bindParam(":Reis", $_POST['reis']);
+        $stmt->bindParam(":Recensie", $_POST['bericht']);
+        $stmt->execute();         
+        header("location: ../cruises.php");
+    }
     

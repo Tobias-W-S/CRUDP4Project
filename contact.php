@@ -6,7 +6,7 @@
       <p>
         <strong>Contact</strong><br />
         <br />
-        - Mail: fakfnanfla@gmail.com<br /><br />
+        - Mail: cruiseandtour@gmail.com<br /><br />
         - Telefoonnummer: 06 12345678<br /><br />
         - Adres: Een straat 101, 1234 AB Nijmegen<br />
       </p>
