@@ -42,6 +42,8 @@
   <td><input type="submit" name="submit" class="button_admin" value="Accepteren"></td>
   <td><input type="submit" name="submit" class="button_admin" value="Bekijk boekingen"></td>
   </tr>
+</table>
+<table>
     <th>Pas aan</th>
     <th>Verwijderen</th>
   </tr>
