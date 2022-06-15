@@ -9,7 +9,8 @@
       <div class="cruise_zoeken">
         <input name="Bestemming" type="text" placeholder="Bestemming.." />
         <input name="Start" type="text" placeholder="Startpunt.." />
-        <input name="Duur" type="text" placeholder="Duur.." />
+        <input name="StartDatum" type="date" />
+        <input name="EindDatum" type="date" />
         <input name="Personen" type="text" placeholder="Aantal personen.." />
         <input name="submitfilter" type="submit" value="Zoeken" />
       </div>
@@ -79,7 +80,7 @@
       <figure class="card__thumb">
         <img src="media/europa.jpg" alt="" class="card__image" />
         <figcaption class="card__caption">
-          <h2 class="card__title">Europa cruise</h2>
+          <h2 class="card__title">Europa cruises</h2>
           <p class="card__snippet">
             In de winter op een van onze cruises? dan bent u bij ons bij het
             juiste adres

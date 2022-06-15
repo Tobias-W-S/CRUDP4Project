@@ -15,6 +15,12 @@
 
     $result = $stmt->fetchAll();
 
+    ?>
+    <div class="background_account">
+
+
+<?php
+
     foreach($result as $value){
         echo '<div class="container">';
         echo '<div class="images">';
@@ -32,4 +38,5 @@
         echo '</div>';
     }
 
-?>
+    ?>
+    </div>
