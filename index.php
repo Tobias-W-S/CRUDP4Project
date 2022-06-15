@@ -79,7 +79,7 @@
       <figure class="card__thumb">
         <img src="media/europa.jpg" alt="" class="card__image" />
         <figcaption class="card__caption">
-          <h2 class="card__title">Europa cruise</h2>
+          <h2 class="card__title">Europa cruises</h2>
           <p class="card__snippet">
             In de winter op een van onze cruises? dan bent u bij ons bij het
             juiste adres
