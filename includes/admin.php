@@ -27,10 +27,10 @@
     <h2>Cruise toevoegen</h2>
       <table>
         <tr>
-          <form class=form_admin action="php/create.php" method="POST">
+          <form class=form_admin action="../php/create.php" method="post">
             <tr>
               <th>Cruise titel</th>
-              <td><input type="text" value="<?php  ?>" name="naam" class="input_border"></td>
+              <td><input type="text" value="<?php  ?>" name="Naam" class="input_border"></td>
             </tr>
             <tr>
               <th>Startbestemming</th>
@@ -42,19 +42,23 @@
             </tr>
             <tr>
               <th>Prijs per persoon</th>
-              <td><input type="text" name="prijs" class="input_border"></td>
+              <td><input type="text" name="Prijs" class="input_border"></td>
             </tr>
             <tr>
               <th>Omschrijving</th>
-              <td><input type="text" name="omschrijving" class="input_border"></td>
+              <td><input type="text" name="Omschrijving" class="input_border"></td>
             </tr>
             <tr>
               <th>Datum</th>
-              <td><input type="text" name="Datum" class="input_border"></td>
+              <td><input type="date" name="Datum" class="input_border"></td>
+            </tr>
+            <tr>
+              <th>Duur</th>
+              <td><input type="text" name="Duur" class="input_border"></td>
             </tr>
             <tr>
               <th>Aantal personen</th>
-              <td><input type="text" name="Aantal personen" class="input_border"></td>
+              <td><input type="text" name="Aantal" class="input_border"></td>
             </tr>
             <tr>
               <th>Afbeelding</th>
@@ -62,7 +66,7 @@
             </tr>
             <tr>
               <th>Opslaan</th>
-              <th><input type="submit" name="submit" class="button_admin"></th>
+              <th><input type="submit" name="Create" class="button_admin"></th>
             </tr>
           </form>
         </tr>

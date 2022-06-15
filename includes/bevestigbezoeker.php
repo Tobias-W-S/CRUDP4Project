@@ -1,4 +1,4 @@
-
+<?php  include("connect.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -32,14 +32,43 @@
     <th>admin</th>
     <th>Accepteren</th>
     <th>Boekingen</th>
+    <th>Pas aan</th>
+    <th>Verwijderen</th>
   </tr>
-  <tr>
-  <td><input type="text" value="" name="naam" class="input_border"></td>
-  <td><input type="text" value="" name="naam" class="input_border"></td>
-  <td><input type="text" value="" name="naam" class="input_border"></td>
-  <td><input type="submit" name="submit" class="button_admin" value="Accepteren"></td>
-  <td><input type="submit" name="submit" class="button_admin" value="Bekijk boekingen"></td>
+  <?php 
+    $sql = "SELECT * FROM `accounts`";
+    $stmt = $connect->prepare($sql);
+    $stmt->execute();
+    $result = $stmt->fetchAll();
+    foreach($result as $value){
+  ?>
+
+  <tr><form method="post" action="UserAdmin.php">
+    <input type="hidden" name="userID" <?php echo'value="' . $value['USER_ID'] . '"'?> >
+    <td><input type="text" <?php echo 'value="' . $value['Mail'] . '"' ?> name="naam" class="input_border"></td>
+    <td><input type="text" <?php echo 'value="' . $value['Password'] . '"' ?> value="" name="wachtwoord" class="input_border"></td>
+    <td>
+      <input type="radio" value="0" id="adminNee" name="Admin" class="input_border" <?php if($value['Admin'] == 0){echo 'checked="checked"';} ?>>
+      <label for="adminNee">Nee</label><br>
+      <input type="radio" value="1" id="adminJa" name="Admin" class="input_border" <?php if($value['Admin'] == 1){echo 'checked="checked"';} ?>>
+      <label for="adminJa">Ja</label><br>
+    </td>
+    <?php 
+      if($value['Geaccepteerd'] == 1){
+        echo '<td><input type="submit" name="geaccepteerd" class="button_admin" value="Geaccepteerd" disabled></td>';
+      }
+      else{
+        echo '<td><input type="submit" name="accepteren" class="button_admin" value="Accepteren"></td>';
+      }
+    ?>
+    
+    <td><a type="submit" <?php echo 'href="../accountPageAdmin.php?id=' . $value['USER_ID'] . '"' ?> class="button_admin">Bekijk boekingen</td>
+    <td><input type="submit" name="edit" class="button_admin" value="Pas aan"></td>
+    <td><input type="submit" name="delete" class="button_admin" value="Verwijder"></td>  
+  </form>
+
   </tr>
+  <?php }; ?>
 </table>
     </div>
    
