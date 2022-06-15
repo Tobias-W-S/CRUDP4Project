@@ -4,16 +4,25 @@
 
   $bestemming = "";
   $start = "";
-  $duur = "";
   $personen = "";
 
   if(isset($_POST['submitfilter'])){
     $bestemming = $_POST['Bestemming'];
     $start = $_POST['Start'];
-    $duur = $_POST['Duur'];
     $personen = $_POST['Personen'];
   }
-  $sql = "SELECT * FROM `cruises` WHERE `Eindbestemming` LIKE '%" . $bestemming . "%' AND `Startbestemming` LIKE '%" . $start . "%' AND `Duur` LIKE '%" . $duur . "%' AND `Aantal personen` LIKE '%" . $personen . "%'"; 
+
+  $sql = "SELECT * FROM `cruises` WHERE `Eindbestemming` LIKE '%" . $bestemming . "%' AND `Startbestemming` LIKE '%" . $start . "%' AND `Aantal personen` LIKE '%" . $personen . "%'"; 
+
+  if(isset($_POST['StartDatum']) && isset($_POST['EindDatum'])){
+    $startdatum = $_POST['StartDatum'];
+    $einddatum = $_POST['EindDatum'];
+    $sql = "SELECT * FROM `cruises` WHERE `Eindbestemming` 
+    LIKE '%" . $bestemming . "%' AND `Startbestemming` LIKE '%" . $start  . "%' AND `Aantal personen` LIKE '%" . $personen . 
+    "%' AND `Datum` BETWEEN '" . $startdatum . "'AND'". $einddatum ."' AND `Datum` BETWEEN '" . $startdatum . "'AND'". $einddatum ."'";  
+  }
+
+  
   $stmt = $connect->prepare($sql);
   $stmt->execute();
   $result = $stmt->fetchAll();

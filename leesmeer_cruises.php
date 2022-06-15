@@ -33,10 +33,10 @@
       <div class="tab-label-content" id="tab3-content">
         <label for="tab3">Duur</label>
         <div class="tab-content">
-          Deze cruise duurt
-          <?php echo $value['Duur']?>
-          dagen. Vanaf
+          Vanaf
           <?php echo $value['Datum']?>
+          tot
+          <?php echo $value['EindDatum']?>
           . Van
           <?php echo $value['Startbestemming']?>
           naar
