@@ -19,9 +19,8 @@
       <div class="navbar">
         <a href="index.php">Home</a>
         <a href="cruises.php">Cruises</a>
-        <a href="about.php">Over ons</a>
+        <a href="about.php">Over</a>
         <a href="contact.php">Contact</a>
-      </div>
       <?php 
         if(isset($_SESSION['id'])){
           include_once("accountNav.php");
@@ -30,6 +29,8 @@
         else{
           include_once("loginNav.php");
         }
+        
       ?>
+      </div>
     </nav>
 
