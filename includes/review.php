@@ -2,9 +2,9 @@
       <div class="tab-label-content" id="tab5-content">
         <label for="tab5">Stuur review</label>
         <div class="tab-content">
-          <form method="post" action="includes/user.php">
+          <form class="review_form" method="post" action="includes/user.php">
             <input
-              type="text"
+              type="hidden"
               name="e-mail"
               <?php echo'value="' . $_SESSION['user'] . '"'?>
               readonly
