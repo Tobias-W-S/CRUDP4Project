@@ -32,7 +32,7 @@
             In de winter op een van onze cruises? dan bent u bij ons bij het
             juiste adres
           </p>
-          <a href="" class="card__button">Bekijk aanbod</a>
+          <a href="cruises.php" class="card__button">Bekijk aanbod</a>
         </figcaption>
       </figure>
     </div>
@@ -45,7 +45,7 @@
             Heerlijk naar de zon op een van onze cruises? dan bent u bij ons bij
             het juiste adres
           </p>
-          <a href="" class="card__button">Bekijk aanbod</a>
+          <a href="cruises.php" class="card__button">Bekijk aanbod</a>
         </figcaption>
       </figure>
     </div>
@@ -59,7 +59,7 @@
             In de winter op een van onze cruises? dan bent u bij ons bij het
             juiste adres
           </p>
-          <a href="" class="card__button">Bekijk aanbod</a>
+          <a href="cruises.php" class="card__button">Bekijk aanbod</a>
         </figcaption>
       </figure>
     </div>
@@ -72,7 +72,7 @@
             In de winter op een van onze cruises? dan bent u bij ons bij het
             juiste adres
           </p>
-          <a href="" class="card__button">Bekijk aanbod</a>
+          <a href="cruises.php" class="card__button">Bekijk aanbod</a>
         </figcaption>
       </figure>
     </div>
@@ -85,7 +85,7 @@
             In de winter op een van onze cruises? dan bent u bij ons bij het
             juiste adres
           </p>
-          <a href="" class="card__button">Bekijk aanbod</a>
+          <a href="cruises.php" class="card__button">Bekijk aanbod</a>
         </figcaption>
       </figure>
     </div>
@@ -98,7 +98,7 @@
             In de winter op een van onze cruises? dan bent u bij ons bij het
             juiste adres
           </p>
-          <a href="" class="card__button">Bekijk aanbod</a>
+          <a href="cruises.php" class="card__button">Bekijk aanbod</a>
         </figcaption>
       </figure>
     </div>
