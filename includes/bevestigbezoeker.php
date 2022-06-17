@@ -28,7 +28,7 @@
     <div class="bezoeker_tabel">
     <h2>Informatie bezoeker</h2>
 <table>
-    <th>Pas aan</th>
+    <th>Pas aan</th>3
     <th>Verwijderen</th>
   </tr>
   <?php 
