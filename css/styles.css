@@ -88,6 +88,15 @@ nav a:hover {
   animation: bounce-in-top 1.1s both;
 }
 
+@media only screen and (max-width: 400px) {
+  .logo {
+    background-image: url("../media/logo1.png");
+    height: 150px;
+    width: 200px;
+  }
+}
+
+
 .titel_card {
   text-align: center;
   background-color: var(--donkerblauw);
@@ -326,7 +335,7 @@ nav a:hover {
   justify-content: space-around;
   flex-wrap: wrap;
   width: 100%;
-  height: 100vh;
+  height: 115vh;
   background-color: var(--quaternary);
 }
 
@@ -414,7 +423,7 @@ nav a:hover {
 }
 
 .info_cruises {
-  margin-top: 8%;
+  margin-top: 5%;
   width: 40%;
   height: 50%;
   background-image: url("../media/foto.jpg");
@@ -508,6 +517,19 @@ nav a:hover {
   display: none;
 }
 
+.review_form input[type="submit"] {
+  background-color: var(--primary);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.review_form input[type="submit"]:hover {
+  background-color: var(--quaternary);
+  color: black;
+}
 /*about.php*/
 .background_about {
   display: flex;
@@ -557,8 +579,19 @@ nav a:hover {
 .contact_form {
   border-radius: 5px;
   padding: 20px;
-  width: 22%;
+  width: 317px;
   animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@media only screen and (max-width: 660px) {
+  .contact p {
+    padding-top: 79px;
+}
+
+.background_contact {
+  height: auto;
+}
+
 }
 
 .contact_form input[type="text"],
@@ -666,8 +699,7 @@ textarea {
   width: 300px;
   padding: 12px;
   border-radius: 4px;
-  margin-top: 6px;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 .aanmelden_form input[type="password"],
