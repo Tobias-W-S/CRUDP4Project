@@ -23,7 +23,7 @@ include("connect.php");
         <a href="delete.php">Aanpassen en verwijderen</a>
         <a href="bevestigbezoeker.php">Informatie gebruiker</a>
         <a href="berichtlezen.php">Bericht lezen</a>
-        <a href="">log uit</a>
+        <a href="../php/logout.php">log uit</a>
       </div>
     </nav>
     <?php
