@@ -29,7 +29,7 @@
         <a href="bevestigbezoeker.php">Informatie gebruiker</a>
         <a href="berichtlezen.php">Bericht lezen</a>
 
-        <a href="">log uit</a>
+        <a href="../php/logout.php">log uit</a>
       </div>
     </nav>
     <div class="toevoegen_tabel">

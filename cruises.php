@@ -46,7 +46,10 @@
     echo '<div class="buttons">';
     echo '<a href="leesmeer_cruises.php?id=' . $value['reisID'] .'" id=' . $value['reisID'] . ' class="add">lees meer</a><br>';
     //Moet nog gecheckt worden of je ingelogd bent
-    echo '<br><a href="php/boeking.php?id='  . $value['reisID'] .'" id=' . $value['reisID'] . ' class="add">voeg toe</a>';
+    if(isset($_SESSION['id'])){
+      echo '<br><a href="php/boeking.php?id='  . $value['reisID'] .'" id=' . $value['reisID'] . ' class="add">voeg toe</a>';
+    }
+   
     
     echo '</div>';
     echo '</div>';
