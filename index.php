@@ -2,7 +2,7 @@
       include("includes/nav.php");
 ?>
 <div class="background_landing">
-  <div class="logo"></div>
+  <div class="logo" onclick="lightmode()"></div>
   <div class="search_bar">
     <h2>Vind uw perfecte cruise</h2>
     <form method="post" action="cruises.php">
@@ -105,5 +105,6 @@
   </div>
 </div>
 <div class="cards"></div>
+<script src="js/main.js"></script>
 </body>
 </html>
