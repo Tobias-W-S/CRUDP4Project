@@ -2,8 +2,9 @@
       include("includes/nav.php");
 ?>
 <div class="background_landing">
+
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-  <div class="logo"></div>
+  <div class="logo" onclick="lightmode()"></div>
   <div class="search_bar">
     <h2>Vind uw perfecte cruise</h2>
     <form method="post" action="cruises.php">
@@ -106,9 +107,12 @@
   </div>
 </div>
 <div class="cards"></div>
+
+<script src="js/main.js"></script>
 <script src="js/button.js"></script>
 <?php
       include("includes/footer.php");
 ?>
+
 </body>
 </html>
