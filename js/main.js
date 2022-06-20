@@ -18,3 +18,11 @@ function lightmode(){
     break; 
   }
 }
+
+function validateForm() {
+  let z = document.forms["formReview"]["bericht"].value;
+  if (z == "") {
+    alert("review must be filled out");
+    return false;
+  }
+}
