@@ -77,5 +77,6 @@
     </div>
   </div>
   <?php break;}?>
+  <script src="js/main.js"></script>
 </body>
 </html>

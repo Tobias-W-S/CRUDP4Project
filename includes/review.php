@@ -2,7 +2,7 @@
       <div class="tab-label-content" id="tab5-content">
         <label for="tab5">Stuur review</label>
         <div class="tab-content">
-          <form class="review_form" method="post" action="includes/user.php">
+          <form class="review_form" name="formReview" method="post" onsubmit="return validateForm()" action="includes/user.php">
             <input
               type="hidden"
               name="e-mail"
